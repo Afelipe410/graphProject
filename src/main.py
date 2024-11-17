@@ -1,13 +1,13 @@
 import sys
 from PyQt6.QtWidgets import QApplication
-from gui.main_window import MainWindow
-from core.network import Network
+from gui.main_window import mainWindow
+from core.network import network
 
 def main():
     app = QApplication(sys.argv)
-    network = Network()
+    network = network()
     
-    window = MainWindow()
+    window = mainWindow()
     window.show()
     
     sys.exit(app.exec())

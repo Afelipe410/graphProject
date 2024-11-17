@@ -1,6 +1,6 @@
 from typing import Dict, List, Optional
-from .tank import Tank
-from .pipe import Pipe
+from .tank import tank
+from .pipe import pipe
 from .district import District
 import json
 

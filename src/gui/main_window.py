@@ -2,7 +2,7 @@ from PyQt6.QtWidgets import (QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
                            QPushButton, QLabel, QToolBar, QStatusBar, QDockWidget)
 from PyQt6.QtCore import Qt, QSize
 from PyQt6.QtGui import QAction, QIcon
-from .map_view import MapView
+from .map_view import mapView
 from .control_panel import ControlPanel
 
 class MainWindow(QMainWindow):
@@ -53,7 +53,7 @@ class MainWindow(QMainWindow):
 
     def _create_central_widget(self):
         # Widget central que contendrá el mapa
-        self.map_view = MapView()
+        self.map_view = mapView()
         self.setCentralWidget(self.map_view)
 
     def _create_dock_widgets(self):
